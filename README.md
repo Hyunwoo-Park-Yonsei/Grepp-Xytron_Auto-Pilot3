@@ -41,7 +41,7 @@
 
 
 ## Limitations
-* Due to the nature of a DQN, we had to train the model in the simulation which wasn't able to apply to the car.
+* Due to the nature of a DQN, we had to train the model in the simulation which wasn't able to apply it to the car.
 * We could have played with the simulation or even make one. But we had a lot of tasks to finish within limited time.
 
 
