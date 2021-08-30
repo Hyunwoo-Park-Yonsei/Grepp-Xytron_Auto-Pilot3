@@ -1,0 +1,15 @@
+<launch>
+    <include file="$(find xycar_lidar)/launch/lidar_noviewer.launch" />
+   
+    <node name="xycar_motor" pkg="xycar_motor" type="xycar_motor.py" output="screen" >
+        <param name="motor_type" value="1" />
+        <param name="angle_offset" value="0)" />
+    </node>
+
+    <node name="dqn2xycar" pkg="dqn2xycar" type="dqn2xycar.py" output="screen" >
+        <param name="hidden_size" value="[1024, 1024]" />
+        <param name="view_epi" value="5212" />
+        <param name="use_lidar_cnt" value="5" />
+    </node>
+
+</launch>
